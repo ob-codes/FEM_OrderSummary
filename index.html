@@ -7,27 +7,38 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     
     <title>Frontend Mentor | Order summary card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
+    <!-- External Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- External CSS sheet -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <section class="main">
-      <div class="contatiner-for-image"></div>
-      <h1>Order Summary</h1>
+    <div class="main">
+      <section class="contatiner-for-image"></section>
+      <section class="contatiner-for-text">
+        <h1>Order Summary</h1>
 
-      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-        device anywhere you like!</p>
-  
-      <h3>Annual Plan</h3>
-      <p>$59.99/year</p>
-  
-      <a href="">Change</a>
-  
-      <button>Proceed to Payment</button>
-      <button>Cancel Order</button>
-    </section>
-    
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+
+        <section class="container-for-plan">
+          <div class="items container-for-music"></div>
+          <div class="items plan">
+            <h3>Annual Plan</h3>    
+            <span>$59.99/year</span>
+          </div>           
+          <a href="#" class="items">Change</a>
+        </section>              
+        
+        <button class="payment"><h3>Proceed to Payment</h3></button>
+        
+        <h3 id="cancel">Cancel Order</h3>
+      </section>      
+    </div>    
   </body>
 </html>
